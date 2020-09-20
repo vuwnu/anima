@@ -11,6 +11,7 @@
 [anim^='fade-in'] {
   --anim-name: fade-in both;
 }
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -84,6 +85,7 @@
 [anim^='rotate-right-360'] {
   --anim-name: rotate-right-360 both;
 }
+
 @keyframes rotate-right-360 {
   from {
     transform: rotate(0deg);
@@ -206,7 +208,17 @@
   --anim-timing-function: ease;
 }
 
-/* Iteration Count */
+[anim~='ease-in-out'] {
+  --anim-timing-function: ease-in-out;
+}
+
+[anim~='ease-out'] {
+  --anim-timing-function: ease-out;
+}
+
+[anim~='ease-in'] {
+  --anim-timing-function: ease-in;
+}
 
 /*  ###
 /*   #  ##### ###### #####    ##   ##### #  ####  #    #
@@ -237,10 +249,6 @@
 }
 
 /* Names */
-
-
-
-
 [anim^='rotate-left-360'] {
   --anim-name: rotate-left-360 both;
 }
