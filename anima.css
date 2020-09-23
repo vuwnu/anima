@@ -5,6 +5,21 @@
   --anim-delay: 0.1s;
   --anim-iteration-count: 1;
 }
+}
+
+/* Direction */
+[anim~='normal'] {
+  animation-direction: normal;
+}
+[anim~='reverse'] {
+  animation-direction: reverse;
+}
+[anim~='alternate'] {
+  animation-direction: alternate;
+}
+[anim~='reverse-alternate'] {
+  animation-direction: alternate-reverse;
+}
 
 /* Animation Keyframes */
 /* Slide In */
