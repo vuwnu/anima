@@ -16,26 +16,13 @@
   animation-play-state: running;
 }
 
-/* Direction */
-[anim~='normal'] {
-  animation-direction: normal;
-}
-[anim~='reverse'] {
-  animation-direction: reverse;
-}
-[anim~='alternate'] {
-  animation-direction: alternate;
-}
-[anim~='reverse-alternate'] {
-  animation-direction: alternate-reverse;
-}
 
 /* Animation Keyframes */
 /* Slide In */
+
 [anim^='fade-in'] {
   animation-name: fade-in;
 }
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -43,6 +30,18 @@
 
   to {
     opacity: 1;
+  }
+}
+
+[anim^='blink'] {
+  animation-name: fade-in;
+}
+@keyframes blink {
+  0% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
   }
 }
 
@@ -292,6 +291,28 @@
 
 [anim^='dance'] {
   animation-name: dance;
+}
+
+/*  ######
+/*  #     # # #####  ######  ####  ##### #  ####  #    #
+/*  #     # # #    # #      #    #   #   # #    # ##   #
+/*  #     # # #    # #####  #        #   # #    # # #  #
+/*  #     # # #####  #      #        #   # #    # #  # #
+/*  #     # # #   #  #      #    #   #   # #    # #   ##
+/*  ######  # #    # ######  ####    #   #  ####  #    #
+*/
+
+[anim~='normal'] {
+  animation-direction: normal;
+}
+[anim~='reverse'] {
+  animation-direction: reverse;
+}
+[anim~='alternate'] {
+  animation-direction: alternate;
+}
+[anim~='reverse-alternate'] {
+  animation-direction: alternate-reverse;
 }
 
 .marquee {
