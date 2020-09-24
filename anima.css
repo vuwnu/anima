@@ -34,7 +34,7 @@
 }
 
 [anim^='blink'] {
-  animation-name: fade-in;
+  animation-name: blink;
 }
 @keyframes blink {
   0% {
